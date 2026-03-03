@@ -5,10 +5,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class FunRestController {
-    //expose "/" that returns hello world
+    // expose "/" that returns hello world
 
     @GetMapping("/")
     public String sayHello() {
-        return "Hello World";
+        return "Hello World!";
+    }
+
+    // expose new endpoint for 'workout
+    @GetMapping("/workout")
+    public String getDailyWorkout() {
+        return "Run a hard 10K";
     }
 }
