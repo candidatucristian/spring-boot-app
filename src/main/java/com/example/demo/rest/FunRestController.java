@@ -17,4 +17,10 @@ public class FunRestController {
     public String getDailyWorkout() {
         return "Run a hard 10K";
     }
+
+    // expose new endpoint for "goodbye'
+    @GetMapping("/goodbye")
+    public String sayGoodbye() {
+        return "Goodbye, y'all";
+    }
 }
