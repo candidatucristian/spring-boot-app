@@ -41,6 +41,13 @@
 			<scope>test</scope>
 		</dependency>
 
+<!--        ADD SUPPORT FOR SPRING SECURITY -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+<!--        LOMBOK FOR ADDING Getters and Setters -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -48,6 +55,7 @@
             <scope>provided</scope>
         </dependency>
 
+<!-- A       CTUATOR FOR SPRING BOOT -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
